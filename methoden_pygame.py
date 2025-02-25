@@ -2,11 +2,11 @@ import pygame
 import sys
 
 # Pygame initialisieren
-pygame.init()
+pygame.init()# Pygame initialisieren
 
 # Fenstergröße und Titel
 n = 5  # Größe des Gitters (n x n)
-scroll_speed = 10  # Scrollgeschwindigkeit
+scroll_speed = 5  # Scrollgeschwindigkeit
 scroll_y = 0  # Scrollposition
 button_size = 100  # Größe der Buttons
 screen_width = n * button_size
@@ -42,6 +42,7 @@ def draw_grid():
             y = row * button_size
             pygame.draw.rect(screen, blau, (x, y, button_size, button_size), 3)
             pygame.draw.rect(screen, grau, (x + 5, y + 5, button_size - 10, button_size - 10))
+
 
 # Funktion zum Überprüfen, ob auf einen Button geklickt wurde
 def check_button_click(mouse_pos):
@@ -87,3 +88,4 @@ while True:
     # FPS steuern
     pygame.time.Clock().tick(60)
 
+#git lernen
